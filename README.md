@@ -6,4 +6,4 @@ This repository contains
 2) The source code for the implementation.
 3) A JSON file containing in the inputs used in the code.
 4) The project report itslef.
-5) 
+5) A way to run the code against the given inputs.
