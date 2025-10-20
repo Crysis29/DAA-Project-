@@ -1,5 +1,6 @@
 # DAA-Project-
 Counting Smaller Elements after self
+Profit maximizing against deadlines problem.
 
 This repository contains
 1) The source code for the original problem.
@@ -8,3 +9,6 @@ This repository contains
 4) The project report itslef.
 5) A way to run the code against the given inputs.
 6) The outputs show jobs scheduled max profit and time.
+6) In the main function in the area of jobs just choose the input from the input files.
+7) Use this coomand in the terminal g++ -std=c++17 -O2 -Wall scdjbs.cpp -o scdjbs for compiling the code.
+8) Use this to ./scdjbs run the code for otuput.
