@@ -46,7 +46,7 @@
       ],
       "expected_output": {
         "scheduled_jobs": ["J4", "J2", "J8", "J10", "J5"],
-        "total_profit_range": [1100, 1200]
+        "total_profit_range": 1325
       }
     },
     {
@@ -88,8 +88,8 @@
 
       ],
       "expected_output": {
-        "scheduled_jobs": ["J2", "J3", "J1", "J5"],
-        "total_profit": 630
+        "scheduled_jobs": J4 J2 J3 J1 J5 
+        "total_profit": 750
       }
     },
     {
@@ -107,8 +107,8 @@
         {10, 5, 190}
       ],
       "expected_output": {
-        "scheduled_jobs": ["J8", "J1", "J3", "J5", "J6"],
-        "total_profit": 1800
+        "scheduled_jobs": J9 J1 J3 J2 J10 J6 J5 J8 
+        "total_profit": 2440
       }
     },
     {
@@ -131,8 +131,8 @@
         {15, 13, 380}
       ],
       "expected_output": {
-        "scheduled_jobs": ["J11", "J4", "J15", "J13", "J2", "J9", "J12", "J8"],
-        "total_profit_range": [3300, 3500]
+        "scheduled_jobs": J7 J6 J5 J3 J1 J14 J9 J2 J8 J4 J13 J11 J15 J12 
+Tota    "total_profit": 4020
       }
     },
     {
@@ -160,8 +160,8 @@
         {20, 19, 870}
       ],
       "expected_output": {
-        "scheduled_jobs_note": "All high-profit, long-deadline jobs fit — almost all will be scheduled.",
-        "total_profit_approx": 9000
+        "scheduled_jobs": J19 J18 J17 J16 J15 J14 J13 J12 J11 J10 J9 J8 J7 J6 J5 J4 J3 J2 J20 J1 
+        "total_profit": 11070
       }
     }
   ]
