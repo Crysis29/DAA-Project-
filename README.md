@@ -18,4 +18,4 @@ This repository contains
         {5, 3, 15}
    Select this portion and enter it where the similar looking block was there, with proper indentations. 
 9) Use this coomand in the terminal g++ -std=c++17 -O2 -Wall scdjbs.cpp -o scdjbs for compiling the code.
-10) Use this to ./scdjbs run the code for otuput.)
+10) Use this to ./scdjbs run the code for otuput.
