@@ -1,0 +1,167 @@
+{
+  "test_cases": [
+    {
+      "name": "Test Case 1 – Basic check (small dataset)",
+      "jobs": [
+        {"id": 1, "deadline": 2, "profit": 100},
+        {"id": 2, "deadline": 1, "profit": 19},
+        {"id": 3, "deadline": 2, "profit": 27},
+        {"id": 4, "deadline": 1, "profit": 25},
+        {"id": 5, "deadline": 3, "profit": 15}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J3", "J1", "J5"],
+        "total_profit": 142
+      }
+    },
+    {
+      "name": "Test Case 2 – Larger profits with varied deadlines",
+      "jobs": [
+        {"id": 1, "deadline": 5, "profit": 200},
+        {"id": 2, "deadline": 3, "profit": 180},
+        {"id": 3, "deadline": 3, "profit": 190},
+        {"id": 4, "deadline": 2, "profit": 300},
+        {"id": 5, "deadline": 4, "profit": 120},
+        {"id": 6, "deadline": 2, "profit": 100},
+        {"id": 7, "deadline": 1, "profit": 250}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J4", "J3", "J1", "J2", "J5"],
+        "total_profit": 990
+      }
+    },
+    {
+      "name": "Test Case 3 – Random deadlines 1–20",
+      "jobs": [
+        {"id": 1, "deadline": 12, "profit": 75},
+        {"id": 2, "deadline": 7, "profit": 180},
+        {"id": 3, "deadline": 15, "profit": 60},
+        {"id": 4, "deadline": 1, "profit": 220},
+        {"id": 5, "deadline": 19, "profit": 130},
+        {"id": 6, "deadline": 3, "profit": 95},
+        {"id": 7, "deadline": 17, "profit": 175},
+        {"id": 8, "deadline": 5, "profit": 160},
+        {"id": 9, "deadline": 10, "profit": 80},
+        {"id": 10, "deadline": 4, "profit": 150}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J4", "J2", "J8", "J10", "J5"],
+        "total_profit_range": [1100, 1200]
+      }
+    },
+    {
+      "name": "Test Case 4 – All deadlines same",
+      "jobs": [
+        {"id": 1, "deadline": 2, "profit": 60},
+        {"id": 2, "deadline": 2, "profit": 100},
+        {"id": 3, "deadline": 2, "profit": 20},
+        {"id": 4, "deadline": 2, "profit": 40},
+        {"id": 5, "deadline": 2, "profit": 80}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J2", "J5"],
+        "total_profit": 180
+      }
+    },
+    {
+      "name": "Test Case 5 – Increasing deadlines",
+      "jobs": [
+        {"id": 1, "deadline": 1, "profit": 50},
+        {"id": 2, "deadline": 2, "profit": 60},
+        {"id": 3, "deadline": 3, "profit": 70},
+        {"id": 4, "deadline": 4, "profit": 30},
+        {"id": 5, "deadline": 5, "profit": 100}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J1", "J2", "J3", "J4", "J5"],
+        "total_profit": 310
+      }
+    },
+    {
+      "name": "Test Set 1 – Small factory batch",
+      "jobs": [
+        {"id": 1, "deadline": 4, "profit": 150},
+        {"id": 2, "deadline": 2, "profit": 200},
+        {"id": 3, "deadline": 3, "profit": 180},
+        {"id": 4, "deadline": 1, "profit": 120},
+        {"id": 5, "deadline": 5, "profit": 100}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J2", "J3", "J1", "J5"],
+        "total_profit": 630
+      }
+    },
+    {
+      "name": "Test Set 2 – Medium batch",
+      "jobs": [
+        {"id": 1, "deadline": 2, "profit": 400},
+        {"id": 2, "deadline": 5, "profit": 180},
+        {"id": 3, "deadline": 3, "profit": 350},
+        {"id": 4, "deadline": 1, "profit": 200},
+        {"id": 5, "deadline": 7, "profit": 300},
+        {"id": 6, "deadline": 6, "profit": 250},
+        {"id": 7, "deadline": 4, "profit": 100},
+        {"id": 8, "deadline": 8, "profit": 500},
+        {"id": 9, "deadline": 3, "profit": 270},
+        {"id": 10, "deadline": 5, "profit": 190}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J8", "J1", "J3", "J5", "J6"],
+        "total_profit": 1800
+      }
+    },
+    {
+      "name": "Test Set 3 – Full-day manufacturing schedule",
+      "jobs": [
+        {"id": 1, "deadline": 6, "profit": 250},
+        {"id": 2, "deadline": 8, "profit": 300},
+        {"id": 3, "deadline": 4, "profit": 180},
+        {"id": 4, "deadline": 10, "profit": 450},
+        {"id": 5, "deadline": 5, "profit": 150},
+        {"id": 6, "deadline": 3, "profit": 100},
+        {"id": 7, "deadline": 2, "profit": 90},
+        {"id": 8, "deadline": 9, "profit": 280},
+        {"id": 9, "deadline": 7, "profit": 310},
+        {"id": 10, "deadline": 1, "profit": 70},
+        {"id": 11, "deadline": 12, "profit": 500},
+        {"id": 12, "deadline": 15, "profit": 420},
+        {"id": 13, "deadline": 11, "profit": 350},
+        {"id": 14, "deadline": 8, "profit": 260},
+        {"id": 15, "deadline": 13, "profit": 380}
+      ],
+      "expected_output": {
+        "scheduled_jobs": ["J11", "J4", "J15", "J13", "J2", "J9", "J12", "J8"],
+        "total_profit_range": [3300, 3500]
+      }
+    },
+    {
+      "name": "Test Set 4 – Heavy manufacturing",
+      "jobs": [
+        {"id": 1, "deadline": 20, "profit": 900},
+        {"id": 2, "deadline": 18, "profit": 850},
+        {"id": 3, "deadline": 17, "profit": 800},
+        {"id": 4, "deadline": 16, "profit": 750},
+        {"id": 5, "deadline": 15, "profit": 700},
+        {"id": 6, "deadline": 14, "profit": 650},
+        {"id": 7, "deadline": 13, "profit": 600},
+        {"id": 8, "deadline": 12, "profit": 580},
+        {"id": 9, "deadline": 11, "profit": 550},
+        {"id": 10, "deadline": 10, "profit": 500},
+        {"id": 11, "deadline": 9, "profit": 480},
+        {"id": 12, "deadline": 8, "profit": 450},
+        {"id": 13, "deadline": 7, "profit": 420},
+        {"id": 14, "deadline": 6, "profit": 400},
+        {"id": 15, "deadline": 5, "profit": 370},
+        {"id": 16, "deadline": 4, "profit": 340},
+        {"id": 17, "deadline": 3, "profit": 310},
+        {"id": 18, "deadline": 2, "profit": 290},
+        {"id": 19, "deadline": 1, "profit": 260},
+        {"id": 20, "deadline": 19, "profit": 870}
+      ],
+      "expected_output": {
+        "scheduled_jobs_note": "All high-profit, long-deadline jobs fit — almost all will be scheduled.",
+        "total_profit_approx": 9000
+      }
+    }
+  ]
+}
