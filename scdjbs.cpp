@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <chrono>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
+using namespace std::chrono;
 
 struct Job {
     int id;
@@ -87,14 +91,31 @@ void jobScheduling(vector<Job>& a) {
 }
 
 int main() {
-    vector<Job> a = {
-        {1, 20, 900}, {2, 18, 850}, {3, 17, 800}, {4, 16, 750},
-{5, 15, 700}, {6, 14, 650}, {7, 13, 600}, {8, 12, 580},
-{9, 11, 550}, {10, 10, 500}, {11, 9, 480}, {12, 8, 450},
-{13, 7, 420}, {14, 6, 400}, {15, 5, 370}, {16, 4, 340},
-{17, 3, 310}, {18, 2, 290}, {19, 1, 260}, {20, 19, 870}
+    vector<Job> a=
+    {
+        {1, 6, 250},
+        {2, 8, 300},
+        {3, 4, 180},
+        {4, 10, 450},
+        {5, 5, 150},
+        {6, 3, 100},
+        {7, 2, 90},
+        {8, 9, 280},
+        {9, 7, 310},
+        {10, 1, 70},
+        {11, 12, 500},
+        {12, 15, 420},
+        {13, 11, 350},
+        {14, 8, 260},
+        {15, 13, 380}
     };
 
+    // Measure execution time of job scheduling
+    auto start = high_resolution_clock::now();
     jobScheduling(a);
+    auto end = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(end - start);
+
+    cout << "Execution Time: " << duration.count() << " microseconds" << endl;
     return 0;
 }
