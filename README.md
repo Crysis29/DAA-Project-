@@ -8,7 +8,7 @@ This repository contains
 3) A JSON file called input.json containing in the inputs used in the code.
 4) The project report itslef.
 5) A way to run the code against the given inputs.
-6) First hover over the <code> reigon then in Codespaces part DAA project should be there.
+6) First hover over the <code> reigon then in Codespaces part DAA Code should be there.
 7) The outputs show jobs scheduled max profit and time.
 6) In the main function in the area of jobs just choose the input from the input files.
 7) Eg. Choose the portion
