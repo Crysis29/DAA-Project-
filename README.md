@@ -7,6 +7,7 @@ This repository contains
 2) The source code for the implementation.
 3) A JSON file called input.json containing in the inputs used in the code.
 4) The project report itslef.
+<<<<<<< HEAD
 5) A way to run the code against the given inputs.
 6) The outputs show jobs scheduled max profit and time.
 6) In the main function in the area of jobs just choose the input from the input files.
@@ -19,3 +20,6 @@ This repository contains
    Select this portion and enter it where the similar looking block was there, with proper indentations. 
 9) Use this coomand in the terminal g++ -std=c++17 -O2 -Wall scdjbs.cpp -o scdjbs for compiling the code.
 10) Use this to ./scdjbs run the code for otuput.
+=======
+5) A way to run the code against the given inputs.
+>>>>>>> de5e263 (Initial commit with project setup and source files.)

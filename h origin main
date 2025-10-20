@@ -1,0 +1,14 @@
+> [33m535fd11[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m C5
+> [33mde5e263[m[33m ([m[1;32mmy-local-main[m[33m)[m Initial commit with project setup and source files.
+< [33mf7b5806[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update expected outputs in Input.json
+< [33mcab6583[m Update README.md
+< [33md440444[m Fix formatting issues in Input.json
+< [33m3d71d32[m Refactor job entries in Input.json format
+< [33mdd6a22e[m Clarify JSON file description in README
+< [33m6026d74[m Create Input.json
+<   [33m0ea3f36[m Merge pull request #1 from Crysis29/my-local-main
+[33m|[m[34m\[m  
+[33m|[m < [33m6ac96e5[m[33m ([m[1;31morigin/my-local-main[m[33m)[m Merge branch 'main' into my-local-main
+[33m|[m[33m/[m  
+< [33m36ca98d[m Initial commit with project setup and source files.
+< [33m6efb0d1[m commit 9f8c3e2d4b5a6c7d8e9f0a1b2c3d4e5f6a7b8c9d Author: Your Name < Aryan@arya-PC > Date:   Mon Jun 10 12:00:00 2024 +0000     Initial commit with project setup and source files. new file:   .vscode/tasks.json new file:   sas.cpp new file:   scdjbs new file:   scdjbs.cpp
